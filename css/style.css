@@ -1,20 +1,156 @@
-body{
-     background-color: navajowhite;
-     margin-top:0%;
-     margin-left:10% ;
-     margin-right:10% ;
-     margin-bottom:0% ;
-     padding: 0;
-}
-body{
-      font-family: "Arial" , "Helvetica" , "Sans-serif";
+p {
+  text-align: justify;
 }
 
-img{
-    margin: 10px 20px 10px 20px;
-    padding: 0px 0px 0px 0px ;
-    width: 20px ;
-  }
+table {
+  width: 50%;
+  border: 1px;
+}
+
+/**p { color: blue; background-color: yellow; }**/
+
+h1 {
+  font-family: arial;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+body {
+  border-color: none;
+  border-style: none;
+  /**solid; **/
+  border-width: 1px;
+}
+
+body {
+  background-color: skyblue;
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  background: #1abc9c;
+  color: white;
+  border-radius: 10px;
+}
+
+img {
+  padding: 0px 0px 0px 0px;
+  margin: 10px 20px 10px 5px;
+}
+
+#flutuar {
+  float: left;
+  margin: 1%;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 200px;
+  ;
+  width: auto;
+}
+
+#menu {
+  float: left;
+}
+
+.pink {
+  background-color: pink;
+}
+
+#paragrafo {
+  color: red;
+}
+
+#Empresa {
+  font: arial;
+  color: red;
+  size: +3;
+}
+
+#formato {
+  float: left;
+  margin: 0;
+}
+
+#frame {
+  width: 60%;
+  height: 300px;
+}
+
+.frame1 {
+  width: 49%;
+  height: 315px;
+}
+
+#cor-um {
+  color: red;
+}
+
+/**abaixo um exemplo de classe. basta chamar no elemento class="colorido"**/
+
+.colorido {
+  color: red;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*menu em horizontal*/
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
 
 
 
