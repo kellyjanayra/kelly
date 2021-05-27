@@ -1,0 +1,40 @@
+body {
+    background: #708090
+  }
+
+#tesoura{
+   width: 18%;
+    }
+
+.principal{
+     background: #FFFFFF
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#missao{
+      font-size:20px
+}
+
+em strong {
+      color:#FF0000;
+}
+
+h2{
+ text-align: center;
+}
+
+strong {
+       color:#FF0000;
+}
+
+.benefícios{
+    background: #FFFFFF ;
+    padding: 20px;
+}
