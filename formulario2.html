@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+    
+<head>
+  <title>Cadastro</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+</head>
+
+<body>
+     <div class="campo">
+         <h1 id="Titulo">Cadastro de Clientes</h1>
+         <p id="Subtitulo">Complete com as suas informações</p>
+         <br>
+    </div>
+    
+     <div class="campo" >
+        
+        <form>
+               <fieldset class="grupo">
+                 <div class="campo" >
+                      <label for="nome"><strong>Nome</strong></label>
+                      <input type="text"  name="nome" id="nome" required>
+                </div>
+                
+                <div class="campo">
+                       <label  for="sobrenome"><strong>Sobrenome</strong></label>
+                       <input type="text"  name="sobrenome" id="sobrenome" required>
+                </div>
+               
+                <div class="campo">
+                    <label for="email" ><strong>E-mail</strong></label>
+                    <input type="text"  name="email" id="email" required>
+             </div>
+
+                </fieldset>
+
+                <div class="campo">
+                    <label>Qual atendimento deseja obter?</label> 
+                    <label>
+                           <input  type="radio"  name="atendimento" value="Cabelo"  checked>Cabelo
+                    </label>
+                    <label>
+                        <input  type="radio"  name="atendimento" value="Barba">Barba
+                    </label>
+                    <label>
+                        <input  type="radio"  name="atendimento" value="Hidratação">Hidratação
+                     </label>
+                     <label>
+                    <input  type="radio"  name="atendimento" value="completo">Cabelo,Barba e Hidratação
+                    </label>
+                </div>
+
+                <div class="campo">
+                   <label>Turno de preferência</label>
+                   <select id="turno">
+                       <option selected disabled value="">Selecione</option>
+                       <option>Manhã</option>
+                       <option>Tarde</option>
+                       <option>Noite</option>
+                   </select>
+                
+                </div>
+                <br>
+                <fieldset class="grupo">
+                 
+
+                <div class="campo" >
+                     <label>Selecione os detalhes adicionais</label><br><br>
+                     <input type="checkbox" name="adicional1" value="corte">
+                     <label for="adicional1">corte</labe>
+                     <input type="checkbox" name="adicional2" value="Tingimento">
+                     <label for="adicional2">Tingimento</labe>
+                
+                </div>    
+              </fieldset>
+            
+              <div class="campo"><br>
+                    <label>Desejar destacar alguma informação adicional</label><br>
+                     <textarea rows="6" name="destaque"></textarea>
+              </div>
+                
+                <button type="submit">Concluído</button>
+                <div class="campo">
+            
+                </div>
+            </form>
+        </div>
+       </body>
+    </html>
+
+
+
+
+
+
+
