@@ -1,5 +1,5 @@
 body {
-    background:#F8F8FF
+    background:#F0F8FF
   }
 
 #tesoura{
@@ -8,7 +8,7 @@ body {
 }  
    
 .principal{
-     background: #FFFFFF
+     background:#F8F8FF ;
 }
 
 h1{
@@ -36,7 +36,7 @@ strong {
 }
 
 .benefícios{
-    background: #FFFFFF ;
+    background: #F8F8FF;
     padding: 20px;
 }
 
