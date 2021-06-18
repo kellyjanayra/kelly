@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Empresa</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet"  href="css/style5.css">
+</head>
+  
+    <div class="header2">
+      <h1>Coca-cola</h1>
+     </div>
+    </ul>
+    <!--Fim do Cabeçalho -->
+     <body>
+       <div class="dropdown">
+         <button class="button">Menu</button>
+         <div class="dropdown-content">
+          <a href="menu.html">Início</a><br>
+          <a href="bebidas.html">Refrigerantes</a><br>
+        <a href="suco.html">Sucos</a><br>
+        <a href="agua.html">Águas</a><br>
+        <a href="formulario3.html">Quem somos</a><br>
+       </div>
+      </div>
+<style>
+
+</style>
+	
+
+	<!---<div id="fourvalues">
+		<p><code></code></p>
+	</div>--->
+	
+ <h3>Quem somos</h3>
+ <table>
+	<tr>
+		<td>
+	<div class="conteudo_topo">
+		<p><img alt="" src="imagem/teste.jpeg" style="width:100%"></p>
+		<p align="right">
+	</div>
+		</td>
+		<td rowspan="2" width=600> Hoje, é uma empresa de bebidas total com mais de 500 marcas em quase todas as categorias e mais de 700.000 pessoas, 
+      fazendo chegar diariamente essas bebidas a clientes e consumidores.<br/>
+		 <br>
+      O nosso objetivo é Satisfazer com excelência a nossos consumidores de bebidas. Ser líder total de bebidas, gerando valor econômico, social e ambiental sustentável, gerenciando modelos de negócio inovadores e ganhadores,
+      com os melhores colaboradores do mundo. São a chave para guiar nosso conduta.<br/>
+		 <br>
+     O que a empresa Coca-cola produz?
+    Atuamos em 9 segmentos refrigerantes, sucos, lácteos, bebidas vegetais, água, águas especiais, água de coco,
+     bebidas esportivas e chás  incluindo versões sem açúcar ou de baixa caloria. <br/></td>
+		  </tr>
+	
+</table>
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <p><h3>Fale Conosco</h3></p>
+  <div class="row">
+    <label class="required" for="name">Seu nome  </label><br/>
+    <input id="fname" class="input" name="fnome" type="text" value="" size="30" placeholder="Digite seu nome aqui"/><br/>
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="name">Seu CPF  </label><br/>
+    <input id="cpf" class="input" name="cpf" type="text" value="" size="30" placeholder="Digite seu cpf aqui"/><br/>
+    <span id="cpf_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Seu email  </label><br/>
+    <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Digite seu email aqui"/><br/>
+    <span id="email_validation" class="error_message"></span>
+  </div>
+    <div class="row">
+    <label class="required" for="name">Seu endereço </label><br/>
+    <input id="endereco" class="input" name="endereco" type="text" value="" size="30" placeholder="Digite seu endereço completo aqui"/><br/>
+    <span id="endereco_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="tname">Seu telefone  </label><br/>
+    <input id="tname" class="input" name="tname" type="text" value="" size="30" placeholder="Digite seu telefone aqui"/><br/>
+    <span id="tname" class="error_message"></span>
+  </div>
+<div class="row">	
+	<label class="required" for="name"> Assunto </label><br/>
+		<select name="assunto" id="assunto">
+			<option value="Contactar empresa">Contactar empresa</option>
+			<option value="Sugestões">Sugestões</option>
+			<option value="Orçamento">Orçamento</option>
+			<option value="Reclamações">Reclamações</option>
+		</select>
+</div>		
+  
+    <label for="message">Sua mensagem:</label><br>
+	<input type="text" size="30"id="message" name="message">
+	<button type="button" onclick="Function1()">Enviar</button>
+  
+    
+</form>
+
+		<p>Seu nome: <normal id="namedig"></normal></p>
+		<p>Seu CPF: <normal id="cpfdig"></normal></p>
+		<p>Seu email: <normal id="emaildig"></normal></p>
+		<p>Seu endereço: <normal id="enderecodig"></normal></p>
+		<p>Sua telefone: <normal id="tnamedig"></normal></p>
+		<p>Sua Sugestão: <normal id="assuntodig"></normal></p>
+		<p>Sua Mensagem: <normal id="messagedig"></normal></p>
+		
+
+<script>
+        function Function1(){
+            var valor;
+            valor = document.getElementById("fname").value;
+            document.getElementById("namedig").innerHTML = valor;
+			var valor;
+            valor = document.getElementById("cpf").value;
+            document.getElementById("cpfdig").innerHTML = valor;
+			var valor;
+            valor = document.getElementById("email").value;
+            document.getElementById("emaildig").innerHTML = valor;
+			var valor;
+            valor = document.getElementById("endereco").value;
+            document.getElementById("enderecodig").innerHTML = valor;
+			var valor;
+            valor = document.getElementById("tname").value;
+            document.getElementById("tnamedig").innerHTML = valor;
+			var valor;
+            valor = document.getElementById("assunto").value;
+            document.getElementById("assuntodig").innerHTML = valor;
+			var	valor;
+			valor = document.getElementById("message").value;
+            document.getElementById("messagedig").innerHTML = valor;
+			
+            var valor;
+            valor = document.getElementById("fname").value;
+            document.getElementById("namedig").innerHTML = valor;
+			
+        }
+
+</script>
+<footer class="rodape_final2">
+  <article> 
+        <p>Empresa Coca-Cola</p>
+  </article>
+  <article>
+        <p>Praia de Botafogo, 374 – 4º andar – Botafogo 22250-040 – Rio de Janeiro – RJ</p>
+  </article>
+       <p>Telefone (21) 2559-1000</p>
+       <article>
+         <p>Rio de Jarneiro-RJ</p>
+   </article>
+     </footer>
+</body>
+</html>

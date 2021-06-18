@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="css/style5.css">
+      <title>menu</title>
+<style>
+</style>
+    </head>
+    <body>
+      <div class="header2">
+      <h1>Coca-cola</h1>
+     </div>
+   </ul>
+   <!--Fim do Cabeçalho -->
+    <body>
+      <div class="dropdown">
+        <button class="button">Menu</button>
+        <div class="dropdown-content">
+         <a href="menu.html">Início</a><br>
+         <a href="bebidas.html">Refrigerantes</a><br>
+       <a href="suco.html">Sucos</a><br>
+       <a href="agua.html">Águas</a><br>
+       <a href="formulario3.html">Quem somos</a><br>
+      </div>
+     </div>
+      <footer class="rodape_final">
+           <article>
+         <img src="imagem/1.png" height="100" width="auto">
+           </article>     
+         <article>
+            <p>Empresa Coca-Cola</p>
+        </article>
+       
+        </footer>
+        
+       <br>
+       <img src="imagem/delton.jpg" height="80%" width="100%"
+    <br><br>
+    
+       <font color="black"><center>OFERTAS EM DESTAQUE</center></font>
+      <br>
+      <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+	</HEAD>
+	<BODY>
+		<div>
+			<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 12px;"></output>
+		</div>
+		<div>
+			<output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 12px;"></output>				
+		</div>			
+	</BODY>
+	<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+
+			setTimeout("atualizaRelogio()",1000);
+		}
+   </script>	
+    
+    <div class="row">
+      <div class="coluna">
+        <img src="imagem/bebida2.png"width:100%">
+       <a href="suco.html">
+      </div>
+      <div class="coluna">
+        <img src="imagem/suco.png" width:100%">
+       <a href="agua.html">
+      </div>
+      <div class="coluna">
+        <img src="imagem/agua.png" width:100%>
+      <a href="bebidas.html" >
+      </div>
+      <div class="coluna">
+        <img src="imagem/refrigerantes2.png" width:100%>
+      <a href="bebidas.html">
+      </div>
+    </div>
+       <br><br><br>
+       
+       <footer class="rodape_final2">
+        <article> 
+              <p>Empresa Coca-Cola</p>
+        </article>
+        <article>
+              <p>Praia de Botafogo, 374 – 4º andar – Botafogo 22250-040 – Rio de Janeiro – RJ</p>
+        </article>
+             <p>Telefone (21) 2559-1000</p>
+             <article>
+               <p>Rio de Jarneiro-RJ</p>
+         </article>
+           </footer>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
