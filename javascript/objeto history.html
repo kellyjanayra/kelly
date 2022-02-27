@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: chartreuse;
+        border:4px solid darkorange;
+        
+    }
+    button{
+        background-color: black;
+        color:chartreuse;
+    }
+    a{
+        color: chartreuse;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+<script>
+   var painel,btnB,btnF,btnG;
+   function hB() {
+       window.history.back();
+   }
+   function hF() {
+    window.history.forward ();  
+   }
+
+   function hG() {
+       window.history.go(-2);
+       
+   }
+
+   
+   function inicia() {
+       btnB=document.getElementById("btnBack");
+       btnF=document.getElementById("btnForward");
+       btnG=document.getElementById("btnBack2");
+      
+      btnB.addEventListener("click",hB);
+      btnF.addEventListener("click",hF);
+      btnG.addEventListener("click",hG);
+
+      
+      
+       painel=document.getElementById("info");
+       painel.innerHTML=history.length; 
+   }
+
+   window.addEventListener("load",inicia)
+</script>
+<body>
+      <h1>Home</h1>
+      <p id="info"></p>
+
+      <a href="objeto history.html">Home</a>
+      <hr>
+      <a href="objeto history P2.html">Página 2</a>
+      <hr>
+      <a href="objeto history P3.html">Página 3</a>
+      <hr>
+      <button id="btnBack">Voltar</button>
+      <hr>
+      <button id="btnForward">Avançar</button>
+      <hr>
+      <button id="btnBack2">Voltar 2</button>
+</body>
+</html>
+

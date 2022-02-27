@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #moto{
+        width: 600px;
+        height: 600px;
+    }
+    .m1{
+        background-image: url("m1.jpg");
+
+    }
+    .m2{
+        background-image: url("m2.jpg");
+    }
+    .m3{
+        background-image: url("m3.png");
+    }
+body{
+   background-color: dodgerblue;
+
+}
+button{
+    color: black;
+    background-color: darkturquoise;
+}
+</style>
+<script>
+    function trocaMoto(m) {
+      var obj=document.getElementById("moto")  
+    if (m==1) {
+        obj.setAttribute("class","m1");
+    }else if (m==2) {
+        obj.setAttribute("class","m2");
+    }else if (m==3) {
+        obj.setAttribute("class","m3");
+    }
+    }
+    function removeMoto() {
+        var obj=document.getElementById("moto") 
+        obj.removeAttribute("class") ;
+    }
+    function verifica() {
+        var obj=document.getElementById("moto")  
+        if(obj.hasAttribute("class")){
+            alert("Atributo class está na tag")
+        }else{
+            alert("Sem atributo class")
+        }
+    }
+       
+</script>
+<body>
+    <button onclick="trocaMoto(1)">Moto 1</button>
+    <button onclick="trocaMoto(2)">Moto 2</button>
+    <button onclick="trocaMoto(3)">Moto 3</button>
+    <button onclick="removeMoto()">Remover Moto</button>
+    <button onclick="verifica()">Verifica</button>
+    <div id="moto"></div>
+    
+</body>
+</html>

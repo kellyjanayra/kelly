@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #painel{
+        border: 2px salmon;
+        border-radius: 10px;
+        padding: 15px;
+        width: 150px;
+        height: 100px;
+    }
+</style>
+<script>
+   var l,a,px,py,painel;
+   
+   l=window.innerWidth;
+   a=window.innerHeight;
+
+   function info() {
+     painel.innerHTML=l;  
+   }
+   
+   function inicia() {
+       painel=document.getElementById("painel");
+       
+       
+   }
+
+   window.addEventListener("load",inicia);
+
+</script>
+<body>
+    <button onclick="info()">Tamanho</button>
+
+    <div id="painel"></div>
+</body>
+</html>

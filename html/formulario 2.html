@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .quebra{
+          display: block;
+      }
+      
+      
+    
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 2px solid chartreuse;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: black;
+            color: honeydew;
+        }
+       
+</style>
+<body>
+      <form name="f_cadastro" action="#" method="get">
+          <label>Username:</label>
+          <input  class="espaco quebra"  type="text" name="f_username" maxlength="20" size="25">
+          <labe>Senha:</labe>
+          <input  class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">
+          <label class="quebra">Esportes favoritos:</label>
+          <input type="checkbox" name="f_fut" >Futebol
+          
+         <input type="checkbox" name="f_bas"> Basquete
+          
+         <input type="checkbox" name="f_nat" >Natação 
+         
+         <label class="quebra espaco_t">Posuuir Carro:</label>
+         <input type="radio" name="f_carro" value="s">Sim
+         <input type="radio" name="f_carro" value="n">Não
+
+
+          <input class=" espaco_t quebra" type="submit" name="f_entra" value="Entrar">
+        
+      </form>
+</body>
+</html>

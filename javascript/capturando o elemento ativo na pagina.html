@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+</style>
+<script>
+    //var dvcx,frames;
+    function ativo(){
+        var cx=document.getElementById("texto_selecionado");
+        var elemento=document.activeElement;
+        var selecao=elemento.value.substring(elemento,selectionStart,elemento.selectionEnd);   
+       cx.innerHTML=selecao;
+    }
+
+   function inicia() {
+       var texto=document.getElementById("txt_original");
+       texto.addEventListener("mouseup",ativo);
+
+   }
+   
+   /*function loop() {
+        dvcx.innerHTML=document.activeElement.tagName;
+        frames=requestAnimationFrame(loop);
+        
+    }
+     function inicia() {
+          dvcx=document.getElementById("cx");
+          loop();
+     }*/
+     window.addEventListener("load",inicia);
+</script>
+</head>
+  <body>
+      <textarea rows="S" cols="20" id="txt_original">CURSO javascript</textarea><br>texto selecionado:<span id="texto_selecionado"></span>
+</body>
+</html>
+
+

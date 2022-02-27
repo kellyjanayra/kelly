@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .quebra{
+          display: block;
+      }
+      
+      
+    
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 2px solid chartreuse;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: black;
+            color: honeydew;
+        }
+        body{
+            border: 2px solid chartreuse;
+        }
+       
+     
+    </style>
+</head>
+<body>
+       <form name="f_cadastro" action="#"  method="get">
+       
+          <input list="f_cores" name="f_cor">
+          <datalist id="f_cores">
+              <option value="red">Vermelho</option>
+              <option value="green">Verde</option>
+              <option value="blue">Azul</option>
+              <option value="Yellow">Amarelo</option>
+              <option value="White">Branco</option>
+              <option value="beige">Bege</option>
+
+          </datalist>
+          <datalist id="f_transporte"> 
+     <option value="01">Carro</option>
+     <option value="02">Avião</option>
+     <option value="03">Navio</option>
+     <option value="04">Motocicleta</option>
+          </datalist>
+        
+        <input  class="quebra espaco_t" type="image"  src="pg2/banner3.jpg"  name="f_img"  >
+
+    
+
+         <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+       </form>
+
+
+
+</body>
+</html>

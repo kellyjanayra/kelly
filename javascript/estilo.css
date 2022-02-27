@@ -1,0 +1,11 @@
+body{
+  overflow-x: hidden;  
+  overflow-y: hidden;  
+  background-color: cyan;
+}
+.navJog{
+    width: 40px;
+    height: 40px;
+    background-image: url("nave_jog.gif");
+    position: absolute;
+}

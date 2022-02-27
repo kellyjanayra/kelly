@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #painel{
+      width: 400px;
+      height: 500px;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px;
+  }
+  body{
+      background-color: aqua;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  hr{
+      border:1px solid black;
+  }
+  
+</style>
+<script>
+        
+            var painel;
+            function localizar(pos) {
+                var c=pos.coords;
+                painel.innerHTML+="Loc: Latitude: " + c.latitude +  " , Longitude: " + c.longitude + "<hr>";
+            }
+            
+            
+            
+            function verifica() {
+           painel=document.getElementById("painel"); 
+           painel.innerHTML="Nome do Browser:" + navigator.appName;
+           painel.innerHTML+="Versão do Browser: " + navigator.appVersion + "<hr>";
+           painel.innerHTML+="Cookies: " + navigator.cookieEnabled + "<hr>";
+          navigator.geolocation.getCurrentPosition(localizar);
+           painel.innerHTML+="Idioma: " + navigator.language + "<hr>";
+          painel.innerHTML+="online: " + navigator.online + "<hr>";
+          painel.innerHTML+="Sistema Operacional: " + navigator.platform + "<hr>";
+          painel.innerHTML+="Engine: " + navigator.product + "<hr>";
+          painel.innerHTML+="Agente: " + navigator.userAgent + "<hr>";
+       
+       
+       
+        }
+
+        window.addEventListener("load",verifica);
+</script>
+<body>
+        <div id="painel"></div>
+</body>
+</html>

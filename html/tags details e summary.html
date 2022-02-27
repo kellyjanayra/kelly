@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+  summary::-webkit-details-marker{
+      color: green;
+  }
+  details[open] summary::-webkit-details-marker{
+      color: blue;
+  }
+ #cursos article{
+      background-color: darkturquoise;
+      border: 1px solid floralwhite;
+      border-radius: 15px;
+      padding: 15px;
+  }
+  
+  body{
+        background-color: darkviolet;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    p{
+        color: black;
+    }
+</style>
+<body>
+
+    <details id="cursos">
+        <summary>Cursos de JavaScript</summary>
+       <article>
+        <p>HTML completo e profissonal</p>
+        <p>CSS</p>
+        <p>C++</p>
+        <p>Python</p>
+        <p>Luna</p>
+        <p>Lessy</p>
+        </article>
+        <article>
+            <p>HTML completo e profissonal</p>
+            <p>CSS</p>
+            <p>C++</p>
+            <p>Python</p>
+            <p>Luna</p>
+            <p>Lessy</p>
+            </article>
+
+    </details>
+</body>
+</html>

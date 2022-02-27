@@ -1,0 +1,20 @@
+.banner{
+    width: 960px;
+    height: 350px;
+    margin: 0 auto;
+    animation: slide 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide{
+    0%, 30%{
+       background-image: url(../imagem/1.png);
+    }
+
+    35%, 65%{
+      background-image: url(../imagem/2.png);
+  }
+   70%, 100%{
+      background-image: url(../imagem/4.png);
+   }
+}

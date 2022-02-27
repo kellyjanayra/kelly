@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+        margin: 0px;
+        background-color: salmon;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .main{
+        border:1px dotted snow;
+        margin: auto;
+        width: 960px;
+    }
+    
+    #cabecalho,#corpo,#rodape{
+        border:1px dotted floralwhite;
+    }
+    #cabecalho{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100px ;
+    }
+    #corpo{
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      width: 100%;
+      height: 570px;
+    }
+    #caixa1,#caixa2,#caixa3{
+        width: 150px;
+        height: 70;
+    }
+    #caixa1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: springgreen;
+    color: black;
+    border:1px solid deeppink;
+    }
+    #caixa2{
+    position:relative;
+    top: 0px;
+    left: 0px;
+    background-color: darkorange;
+    color: black;
+    border:1px solid deeppink;
+     }
+    #caixa3{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: aqua;
+    color: black;
+    border:1px solid deeppink;
+    z-index: 100;
+    }
+    #rodape{
+        position: absolute;
+        top: 670px;
+        left: 0px;
+        width: 100%;
+        height: 90px;
+        background-color:honeydew;
+        color:black;
+    }
+</style>
+<body>
+     <div id="cabecalho">
+         <div class="main">
+             <h1>CFB Cursos</h1>
+         </div>
+     </div>
+     <div id="corpo">
+         <div class="main">
+             <div id="caixa1">
+                 <h3>Caixa 1</h3>
+             </div>
+             <div id="caixa2">
+                 <h3>Caixa 2</h3>
+
+             </div>
+             <div id="caixa3">
+                 <h3>Caixa 3</h3>
+             </div>
+             <p>Nesta aula vamos aprender a manipular divs,usando position,top,left,width,height.</p>
+             <p>Se ainda não for inscrito em nosso canal, se inscreva</p>
+              <p>Siga-nos na nossas redes sociais</p>
+            </div>
+     </div>
+     <div id="rodape">
+         <div class="main">
+             <p>https://www.youtube.com/watch?v=CQf4QTGDwvw&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=25</p>
+            
+             <p>Cfbcursos.com</p>
+         </div>
+     </div>
+</body>
+</html>

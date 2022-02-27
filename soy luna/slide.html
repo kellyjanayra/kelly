@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"  href="slide.css">
+<link rel="shortcut icon" href="img/foto05.jpg" type="image/x-icon">
+<style>
+.mySlides {display:none;}
+</style>
+
+<body>
+ <h1></color>Serie Soy Luna</h1>
+ <img src="img/000 - SOY LUNA – Terceira Temporada.png">
+ 
+ <p>Luna Valente (Karol Sevilla) vive feliz no México. 
+   Ela tem um part time a entregar comida, o que faz com que possa passar os seus tempos livres a fazer aquilo que mais gosta: estar com o seu melhor amigo Simón e andar de patins em Cancún. A vida de Luna sofre uma reviravolta 
+  inesperada quando ela se muda com os pais (Miguel e Mónica) para a Argentina por causa do trabalho.
+  Luna refugia-se nos seus patins e descobre o Jam & Roller (uma pista de patinagem). É aqui que começa a viver grandes aventuras.
+  Conhece a sua nova melhor amiga (Nina) e muitos mais amigos como o Nico, o Pedro, a Jim, a Yam e o Ramiro. Mas nem sempre é tudo de bom, sempre há alguém que implica na história e aqui é a Ámbar e as suas amigas (Delfina e Jazmín).
+   Depois há também o Matteo, namorado da Ámbar e quando chega a Luna á Argentina, a relação da Ámbar e do Matteo vai ter altos e baixos.</p>
+
+   <div class="w3-container">
+  
+  <h2>Personagens</h2>
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="img/luna.jpg" style="width:100%"  >
+  <img class="mySlides w3-animate-bottom" src="img/matteo.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="img/ambar.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/foto06.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/gaston.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/iam.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/jazmin.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/jim.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/sharonjpg.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/emilia.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/Benicio_s3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/delfina.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/Cato2.jpg" style= "width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/nico.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/pedro.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/Reyd.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/Tamara2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/miguel-valente-1591990-normal.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/Roberto_Carnaghi.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="img/simon.jpg" style="width:100%">
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2500);    
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+
+
+</body>
+</html>

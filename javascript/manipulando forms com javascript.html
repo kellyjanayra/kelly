@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    label{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+    input[type=submit],label{
+        margin-top:10px
+    }
+</style>
+
+
+
+
+</head>
+<body>
+    <form name="curso1" id="curso1" action="#" method="post">
+        <label>Nome</label>
+        <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+        <label>Senha</label>
+        <input type="submit" name="btEnviar" value="Envia">    
+        <input type="submit" name="btEnviar" value="Enviar"> 
+
+    </form>
+    <hr>
+    <script>
+       var fm=document.forms.length;
+    document.write(fm)
+
+
+
+    </script>
+</body>
+</html>

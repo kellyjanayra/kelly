@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<script>
+    function abrirDialog() {
+        document.getElementById("d1").setAttribute("open","");
+
+        
+    }
+    function fecharDialog() {
+        document.getElementById("d1").removeAttribute("open");
+        
+        
+    }
+</script>
+
+<body>
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+    <dialog id="d1" open>
+    <p><dfn title="Um pouco sobre o sol">Sol</dfn> e aumento de nuvens de manhã. Pancadas de chuva à tarde. ... Pancadas de chuva à tarde. À noite o tempo fica aberto. </p>
+    <p><dfn title="Sobre o Clima">O que é clima</dfn>
+
+        Ele é uma média do tempo em determinado local. Exemplos: Todo fim de ano faz muito sol em Brasília; O clima do Rio de Janeiro é o tropical.</p>
+</dialog>
+    </body>
+</html>

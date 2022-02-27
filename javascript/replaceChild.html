@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       background-color: dimgrey;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+        color: dimgrey;
+       background-color: fuchsia;
+        
+    }
+</style>
+<script>
+        function inicia() {
+            var novoH1=document.createElement("h1");
+            var listaCursos=document.getElementById("cfbcursos");
+        //var velho=document.getElementById("velho")
+            var antigoP=listaCursos.childNodes[7];
+            var txtH=document.createTextNode(antigoP.innerHTML);
+            novoH1.appendChild(txtH);
+            //alert(antigoP.innerHTML);
+            listaCursos.replaceChild(novoH1,antigoP);
+        }
+        window.addEventListener("load",inicia);
+</script>
+<body>
+  
+       <div id="cfbcursos">
+           <p>Curso de Javascript</p>
+           <p>Curso de Html</p>
+           <p>Curso de C++</p>
+           <p>Curso de CSS3</p>
+           <p>Curso de Flash</p>
+       </div>
+</body>
+</html>

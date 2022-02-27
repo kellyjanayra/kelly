@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+         background-color: greenyellow;
+         border:2px solid black;
+         color: black;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         padding: 10px;
+     }
+     button{
+         background-color: white;
+         color: black;
+     }
+</style>
+<script>
+        function inicia() {
+         var btn=document.getElementById("btnDestaque").addEventListener("click",function () {
+          var num=document.getElementById("fnum").value;
+            var p=document.getElementsByTagName("p");
+            for(var i=0;i<p.length;i++){
+                p[i].removeAttribute("style");
+            }
+          var at=document.createAttribute("style");
+          at.value="color:#f00;";
+          p[num].setAttributeNode(at);
+        });
+        }
+        window.addEventListener("load",inicia);
+</script>
+<body>
+       <input type="text" id="fnum">
+       <button id="btnDestaque">Destacar</button>
+
+
+       <p>Curso de Javascript</p>
+       <p>Curso de Html</p>
+       <p>Curso de CSS3</p>
+       <p>Curso de C+++</p>
+       <p>Curso de Photoshop</p>
+
+    </body>
+</html>

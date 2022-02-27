@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .quebra{
+          display: block;
+      }
+      
+      
+    
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 2px solid chartreuse;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: black;
+            color: honeydew;
+        }
+        body{
+            border: 2px solid chartreuse;
+        }
+       
+     
+    </style>
+</head>
+<body>
+       <form name="f_cadastro" action="#"  method="get">
+       <fieldset>
+        <legend>Dados 1:</legend> 
+        <label for="f_nome"    class="quebra">Nome:</label>
+        <input type="text" name="f_nome" id="f_nome" >
+
+       <label for="f_nome"   class="quebra">Telefone:</label>
+        <input type="tel" id="f_telefone" name="f_telefone"  pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+</fieldset>
+   <br> 
+   <fieldset disabled> 
+    <legend>Dados 2:</legend>
+            <label for="f_nome"    class="quebra espaco_t">Possuir Carro:</label>
+             <input type="radio" name="f_casa" id="f_casa" value="s" checked>Sim
+       <br>
+       <input type="radio" name="f_casa" id="f_casa" value="n" checked>Não<br>
+       <br> 
+       
+       <label for="f_nome"  class="quebra espaco_t">Possuir casa propria:</label>
+       <input type="radio" name="f_casa" id="f_casa" value="s" checked>Sim
+       <br>
+       <input type="radio" name="f_casa" id="f_casa" value="n" checked>Não<br>
+
+       </fieldset>
+        <input  class="quebra espaco_t" type="image"  src="pg2/banner3.jpg"  name="f_img"  >
+
+    
+
+         <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+       </form>
+
+
+
+</body>
+</html>

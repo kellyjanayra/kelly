@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=“pt-br”>
+<head>
+<title>Curso de Javascript</title>
+<meta charset=“UTF-8”>
+<style>
+#dv1{
+position:absolute;
+left:0px;
+top:0px;
+width:100px;
+height:100px;
+background-color:#f00;
+border:1px solid #000;
+}
+</style>
+<script>
+    var px=0;
+    var py=0;
+    var obj;
+
+    function move() {
+       // var obj=document.getElementById("dv1");
+        var tecla=event.keyCode;
+
+        if(tecla==37){
+            px-=10;
+            obj.style.left=px+"px";
+        }else if(tecla==38){
+            py-=10;
+            obj.style.top=py+"px";
+        }else if(tecla==39){
+            px+=10;
+            obj.style.left=px+"px";
+        }else if(tecla==40){
+            py+=10;
+            obj.style.top=py+"px";
+        }else if(tecla==13){
+            obj.style.backgroundColor="#fff"
+            alert("Evento keydown REMOVIDOOO");
+            document.removeEventListener("keydown",move);
+        }
+    }
+     function addClique() {
+         document.addEventListener("keydown",move);
+        obj.style.backgroundColor="pink";
+    
+    
+    }
+    function iniciar() {
+        obj.document.getElementById("dv1");
+        obj.addEventListener("click",addClique);
+
+ }
+ 
+ window.addEventListener("load",iniciar);
+</script>
+</head>
+<body>
+     <div id="dv1"></div>
+</body>
+</html>

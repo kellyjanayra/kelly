@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .quebra{
+          display: block;
+      }
+      
+      
+    
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 2px solid chartreuse;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: black;
+            color: honeydew;
+        }
+        body{
+            border: 2px solid chartreuse;
+        }
+       
+     
+    </style>
+</head>
+<body>
+       <form name="f_cadastro" action="#"  method="get" enctype="multipart/form-data">
+
+        <!--file
+          multiple (boolean)
+          accept=".doc,.docx,"
+          accept="application/msword"
+          accept="image/*,.pdf"
+          accept=".jpg,gif,.png"
+          accept="image/jpg,image/gif,image/png"
+
+          PARA SELECIONAR VARIAS ARQUIVOS APERTAR NO ARQUIVO E O CTRL
+          url
+          placeholder="https://cfbcursos.com.br"
+          pattern="https://."
+        
+        -->
+       
+        <label class="quebra">Selecione o arquivo:</label>
+        <input type="file" name="f_arquivo"  accept=".jpg,.gif,.png"  multiple>
+        
+
+       <label class="quebra">Digite o URL:</label>
+        <input type="url" name="f_url">
+
+        
+        
+        <input  class="quebra espaco_t" type="image"  src="pg2/banner3.jpg"  name="f_img"  >
+
+    
+
+         <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+       </form>
+
+
+
+</body>
+</html>

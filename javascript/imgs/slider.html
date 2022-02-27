@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang=“pt-br”>
+<head>
+<title>Curso de Javascript</title>
+<meta charset=“UTF-8”>
+<style>
+#dvSlider{
+width: 1000px;
+height:300px;
+border:1px solid olivedrab;
+}
+
+body{
+    text-align: center;
+   }
+.bt{
+    display: flex;
+}
+
+</style>
+<script>
+var slides=new Array("s1.jpg","s2.jpg","s3.jpg","s4.jpg","s5.jpg");
+var tam=slides.length;
+var satual=1;
+var tmpSlider;
+function trocaAutomatica(){
+satual++;
+if(satual >= tam){
+satual=0;
+}
+document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
+}
+function iniciaSlider(){
+document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
+tmpSlider=setInterval(trocaAutomatica,3000);
+}
+function parar(){
+clearInterval(tmpSlider);
+}
+function troca(dir){
+    satual+=dir;
+if(satual < 0){
+satual=2;
+}else if(satual >= tam){
+satual=0;
+}
+document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
+clearInterval(tmpSlider);
+tmpSlider=setInterval(trocaAutomatica,3000);
+}
+</script>
+</head>
+<body onload="iniciaSlider()">
+    <div id="dvSlider" onmouseover="parar()" onmouseout="iniciaSlider()">
+        <input type="button" value="<" id="bt" onclick="troca(-1)">
+        <input type="button" value=">" id="bt" onclick="troca(1)">
+        </div>
+
+</body>
+</html>
+ 
